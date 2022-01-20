@@ -1,2 +1,2 @@
-# Pango2D
+# Pengolo
 2D Game by Karl Koehle Copyright - 2021
