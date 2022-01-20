@@ -7,19 +7,18 @@ public class SokobanPlayerMove : MonoBehaviour
 {
     [SerializeField] float _speed = 3f;
     public int points = 1;
+    public int life = 1;
 
     //Environment Collider
     public LayerMask mask;
-
     [SerializeField] private float _detectionRadius = 1f;
-
     public Vector3 _destination;
 
     Animator animator;
 
     //private string currentState;
-    public bool isPushing;  //add this later below per animation states
-                            //public bool isMoving = true;
+    public bool isPushing;  //add this later below per animation states  ******************
+    public bool isMoving = true;   // get this to work *****************
 
     void Awake()
     {
@@ -30,19 +29,18 @@ public class SokobanPlayerMove : MonoBehaviour
     void Start()
     {
 
+        animator.SetBool("isMoving", true); // *******
     }
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, _destination) < Mathf.Epsilon)
+        if (Vector3.Distance(transform.position, _destination) < Mathf.Epsilon)  // Really really close to destination
         {
             #region Check Directions
 
             // if player is very close to the destination
             if (Input.GetAxisRaw("Horizontal") > 0)
             {
-                //inserting Aniamtor content
-
                 if (CheckDirection(Vector3.right))
                 {
                     _destination = transform.position + Vector3.right;
@@ -61,7 +59,6 @@ public class SokobanPlayerMove : MonoBehaviour
                 if (CheckDirection(Vector3.up))
                 {
                     _destination = transform.position + Vector3.up;
-                    //  animator.Play(P_walkUp);
                 }
             }
             else if (Input.GetAxisRaw("Vertical") < 0)
@@ -70,7 +67,6 @@ public class SokobanPlayerMove : MonoBehaviour
                 {
                     _destination = transform.position + Vector3.down;
                 }
-                // animator.Play(P_idle);
             }
             #endregion
         }
@@ -78,20 +74,11 @@ public class SokobanPlayerMove : MonoBehaviour
         else   //if distance is NOT close to zero  - MOVE
         {
             transform.position = Vector3.MoveTowards(transform.position, _destination, _speed * Time.deltaTime);
-            //  animator.SetBool("isMoving", false);   // ismoving set
+        //    animator.SetBool("isMoving", true);   // ismoving set  ********************
         }
-
-
-
-        // Health  = GameOver
-        //if (points <= 0)
-        //{
-        //    SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
-        //}
-
-
-
     }
+
+
 
     private bool CheckDirection(Vector3 direction)
     {
@@ -105,6 +92,7 @@ public class SokobanPlayerMove : MonoBehaviour
             {
                 //Push block if it is able
                 PushableBlock pushableBlock = hit.collider.GetComponent<PushableBlock>();
+
                 //Insert - Set bool isPushing to drive Push Animations
 
                 if (!pushableBlock)

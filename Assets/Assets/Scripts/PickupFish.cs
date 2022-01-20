@@ -9,6 +9,7 @@ public class PickupFish : PickupBase
     public override void OnPickup()
     {
         Player.points += points;
+      //  playSound.Play(FishPickup);
     }
 }
 

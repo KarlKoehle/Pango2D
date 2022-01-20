@@ -8,27 +8,25 @@ public class LevelManager : MonoBehaviour
 {
     public static int scoreValue = 0;
     public Text score;
+    public static int life;
+    public Text lifeTotal;
+
     public SokobanPlayerMove Player;
       
     public GameObject OpenDoor;
     public GameObject ExitBlocked;
-
-    //GameObject DoorOpen;
-
-    //public Exit exit;
    
+
     void Awake()
     {
         Player = FindObjectOfType<SokobanPlayerMove>();
-
-      //  OpenDoor.SetActive(true);   //  not working unassigned Reference Exception - Has not been assigned.
-      // ExitBlocked.SetActive(true);  
-
     }
 
     void Update()
     {
         score.text = "Score:" + scoreValue + Player.points;
+        lifeTotal.text = "Life:" + life + Player.life;
+        //
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -41,14 +39,5 @@ public class LevelManager : MonoBehaviour
             
           SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
         }
-
-
-
-
-
-
-
     }
-  
-
 }
