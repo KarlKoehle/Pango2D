@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4643871904738803008
+--- !u!1 &8104287427380246759
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4643871904738803009}
-  - component: {fileID: 4643871904738803014}
+  - component: {fileID: 8104287427380246758}
+  - component: {fileID: 8104287427380246753}
   m_Layer: 0
-  m_Name: FishPickupSound
+  m_Name: Life_PickupDing
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4643871904738803009
+--- !u!4 &8104287427380246758
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4643871904738803008}
+  m_GameObject: {fileID: 8104287427380246759}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.089999914, y: 0.010000229, z: -3.5569181}
+  m_LocalPosition: {x: -2.830834, y: -12.338069, z: 0.0029096603}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4643871906332710046}
+  m_Father: {fileID: 8104287427439771728}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &4643871904738803014
+--- !u!82 &8104287427380246753
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4643871904738803008}
+  m_GameObject: {fileID: 8104287427380246759}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ba94a2ccd173b1443a355decd03c034d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7a9bbb715ac7ca04b8487265b61e9759, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -127,7 +127,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &4643871906332710041
+--- !u!1 &8104287427439771729
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,31 +135,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4643871906332710046}
+  - component: {fileID: 8104287427439771728}
   m_Layer: 0
-  m_Name: FishPickup
+  m_Name: LifePickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4643871906332710046
+--- !u!4 &8104287427439771728
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4643871906332710041}
+  m_GameObject: {fileID: 8104287427439771729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5498812302548620691}
-  - {fileID: 4643871904738803009}
+  - {fileID: 8104287428657904068}
+  - {fileID: 8104287427380246758}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5498812302548620694
+--- !u!1 &8104287428657904090
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,39 +167,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5498812302548620691}
-  - component: {fileID: 5498812302548620690}
-  - component: {fileID: 5498812302548620693}
-  - component: {fileID: 5498812302548620692}
-  - component: {fileID: 4643871904787343976}
+  - component: {fileID: 8104287428657904068}
+  - component: {fileID: 8104287428657904069}
+  - component: {fileID: 8104287428657904071}
+  - component: {fileID: 8104287428657904070}
   m_Layer: 0
-  m_Name: Fish
+  m_Name: Life
   m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5498812302548620691
+--- !u!4 &8104287428657904068
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498812302548620694}
+  m_GameObject: {fileID: 8104287428657904090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4643871906332710046}
+  m_Father: {fileID: 8104287427439771728}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5498812302548620690
+--- !u!212 &8104287428657904069
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498812302548620694}
+  m_GameObject: {fileID: 8104287428657904090}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -232,8 +231,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 8937792914546126334, guid: e21404019098cab42ad674be930ef2ed, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -7542808524310102616, guid: fe39e1254b6c12641b0668af1029da81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -244,32 +243,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5498812302548620693
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498812302548620694}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aca3b06e801c49a41bdba739d3537c7a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &5498812302548620692
+--- !u!58 &8104287428657904071
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498812302548620694}
+  m_GameObject: {fileID: 8104287428657904090}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -278,18 +258,18 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
---- !u!114 &4643871904787343976
+  m_Radius: 0.24
+--- !u!114 &8104287428657904070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5498812302548620694}
+  m_GameObject: {fileID: 8104287428657904090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f01e11682eae54845b98f2745821e30f, type: 3}
+  m_Script: {fileID: 11500000, guid: 6233f4e13da81954bbb217ec3425a58e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playSound: {fileID: 4643871904738803014}
-  points: 1
+  playSound: {fileID: 8104287427380246753}
+  life: 1
