@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class PickupBase : MonoBehaviour 
 {
-    public GameObject Fish;
+    public GameObject Pickup;
     public SokobanPlayerMove Player;
     public AudioSource playSound;
 
@@ -21,7 +21,8 @@ public abstract class PickupBase : MonoBehaviour
 
             playSound.Play();
             Destroy(gameObject);
-            print("Fish has been collected");
+
+            // print("Item has been collected");
         }
     }
 

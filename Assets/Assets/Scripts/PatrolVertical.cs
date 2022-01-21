@@ -12,6 +12,7 @@ public class PatrolVertical : MonoBehaviour
 
     public SokobanPlayerMove Player;
     private int points = 1;
+    private int life = 1;
 
     private void Start()
     {
@@ -39,6 +40,7 @@ public class PatrolVertical : MonoBehaviour
         if (hit.CompareTag("Player"))
         {
             Player.points -= points;
+            Player.life -= life;
             playSound.Play();
         }
     }

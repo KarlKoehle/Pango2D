@@ -6,12 +6,13 @@ public class PatrolTest : MonoBehaviour
     public float moveSpeed;
     public float patrolrange;
 
-    public AudioSource playSound;  //Sound  *Squawk
+    public AudioSource playSound;  //Sound  Squawk
 
   //  public GameObject enemy;
 
     public SokobanPlayerMove Player;
     private int points = 1;
+    private int life = 1;
 
     private void Start()
     {
@@ -39,6 +40,7 @@ public class PatrolTest : MonoBehaviour
         if (hit.CompareTag("Player"))
         {
             Player.points -= points;
+            Player.life -= life;
             playSound.Play();
         }
     }

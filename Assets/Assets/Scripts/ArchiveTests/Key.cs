@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Heart : MonoBehaviour
+public class Key : MonoBehaviour       //SCRIPT NO LONGER USED!
 {
-    public GameObject heart;
+    public GameObject key;
     public SokobanPlayerMove Player;
 
     public GameObject OpenDoor;
@@ -28,7 +28,7 @@ public class Heart : MonoBehaviour
             OpenDoor.SetActive(true);
             ExitBlocked.SetActive(false);
 
-            print("Key has been collected");
+          //  print("Key has been collected");
                         
         }
     }

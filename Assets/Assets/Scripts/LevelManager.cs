@@ -33,8 +33,7 @@ public class LevelManager : MonoBehaviour
 
         // Health  = GameOver
         if (Player.points <= 0)
-         {
-            
+        {
           SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
         }
     }
