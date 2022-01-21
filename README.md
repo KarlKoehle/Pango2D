@@ -5,6 +5,9 @@
 Pengolo is a sokoban style block-pushing game that harkens back to classic NES games like "Pengo" and "Adventures of Lolo." 
 You control a penguin who pushes cubes of ice,  collect fish, and avoid the angry enemy penguins to navigate through the level.
 
+![alt text](Assets/Assets/Pengolo_Game.jpg)
+
+
 ### Controls
 Mouse & keyboard  (**Arrow keys** or **WASD**) are required for gameplay 
 (**Esc**) - Escape will to return to main level.
