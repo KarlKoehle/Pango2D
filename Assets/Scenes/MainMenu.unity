@@ -369,7 +369,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 386589954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a056c0ffefe6b74bb2b7e575ca600ba, type: 3}
+  m_Script: {fileID: 11500000, guid: cafb66649213da24b8eb20982d67592d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &519420028
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 530912242}
   - component: {fileID: 530912241}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Start Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -790,7 +790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c63213a0b5ae8664b894c930de545a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Square: {fileID: 1167934164}
 --- !u!1 &1247251926
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,8 +902,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 386589958}
-        m_TargetAssemblyTypeName: menuCredits, Assembly-CSharp
+      - m_Target: {fileID: 1920860164}
+        m_TargetAssemblyTypeName: MenuCredits, Assembly-CSharp
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -1172,8 +1171,8 @@ GameObject:
   - component: {fileID: 1920860162}
   - component: {fileID: 1920860161}
   - component: {fileID: 1920860160}
-  - component: {fileID: 1920860165}
   - component: {fileID: 1920860164}
+  - component: {fileID: 1920860165}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged

@@ -26,12 +26,16 @@ public class ScoreManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            scoreValue = 0;
+            lifeValue = 1;
             SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
         }
 
         // Health  = GameOver
         if (lifeValue <= 0)
         {
+            scoreValue = 0;
+            lifeValue = 1;
           SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
         }
     }
