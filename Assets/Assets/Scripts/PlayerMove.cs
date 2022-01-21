@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SokobanPlayerMove : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float _speed = 3f;
     public int points = 1;
@@ -12,13 +12,13 @@ public class SokobanPlayerMove : MonoBehaviour
     //Environment Collider
     public LayerMask mask;
     [SerializeField] private float _detectionRadius = 1f;
-    public Vector3 _destination;
+    private Vector3 _destination;
 
     Animator animator;
 
     //private string currentState;
-    public bool isPushing;  //add this later below per animation states  ***************  WIP
-    public bool isMoving = true;   // get this to work *****************  WIP
+    // private bool isPushing;  //add this later below per animation states  ***************  WIP
+    // private bool isMoving = true;   // get this to work *****************  WIP
 
     void Awake()
     {

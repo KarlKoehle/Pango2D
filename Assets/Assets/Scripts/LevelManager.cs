@@ -10,14 +10,12 @@ public class LevelManager : MonoBehaviour
     public Text score;
     public static int lifeValue = 1;
     public Text life;
-    public SokobanPlayerMove Player;
-    public GameObject OpenDoor;
-    public GameObject ExitBlocked;
-   
+    private PlayerMove Player;
+
 
     void Awake()
     {
-        Player = FindObjectOfType<SokobanPlayerMove>();
+        Player = FindObjectOfType<PlayerMove>();
     }
 
     void Update()

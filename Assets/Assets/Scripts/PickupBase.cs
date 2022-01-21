@@ -4,12 +4,12 @@ using UnityEngine;
 
 public abstract class PickupBase : MonoBehaviour 
 {
-    public SokobanPlayerMove Player;
+    public PlayerMove Player;
     public AudioSource playSound;
 
     private void Awake()
     {
-        Player = FindObjectOfType<SokobanPlayerMove>();
+        Player = FindObjectOfType<PlayerMove>();
     }
 
     void OnTriggerEnter2D(Collider2D hit)

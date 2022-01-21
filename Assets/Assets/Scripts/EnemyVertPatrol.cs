@@ -1,35 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class PatrolTest : MonoBehaviour
+public class EnemyVertPatrol : MonoBehaviour
 {
     public float moveSpeed;
     public float patrolrange;
 
-    public AudioSource playSound;  //Sound  Squawk
+    public AudioSource playSound;  //Sound  *Squawk
 
   //  public GameObject enemy;
 
-    public SokobanPlayerMove Player;
+    public PlayerMove Player;
     private int points = 1;
     private int life = 1;
 
     private void Start()
     {
         moveSpeed = 2f;
-        Player = FindObjectOfType<SokobanPlayerMove>();
+        Player = FindObjectOfType<PlayerMove>();
     }
 
     void Update()
     {
-        transform.position += transform.right * Time.deltaTime * moveSpeed;
+        transform.position += transform.up * Time.deltaTime * moveSpeed;
 
-        if (transform.position.x >= 2.5)
+        if (transform.position.y <= -5)
         {
             moveSpeed = -moveSpeed;
         }
 
-        if (transform.position.x <= -2.5)
+        if (transform.position.y >= 5)
         {
             moveSpeed = -moveSpeed;
         }
