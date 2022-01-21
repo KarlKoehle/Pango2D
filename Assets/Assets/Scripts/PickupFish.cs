@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickupFish : PickupBase    //  PickupFishe is a derived class from PickupBase.
 {
-    public int points = 10;
+    public int points = 1;
 
     public override void OnPickup()
     {

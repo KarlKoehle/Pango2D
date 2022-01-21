@@ -29,7 +29,7 @@ public class SokobanPlayerMove : MonoBehaviour
     void Start()
     {
 
-        animator.SetBool("isMoving", true); // *******
+        //animator.SetBool("isMoving", true); // *******
     }
 
     void Update()

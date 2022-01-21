@@ -4,22 +4,26 @@ using UnityEngine;
 
 public abstract class PickupBase : MonoBehaviour 
 {
-    public GameObject Pickup;
     public SokobanPlayerMove Player;
     public AudioSource playSound;
 
-    private void Start()
+    private void Awake()
     {
         Player = FindObjectOfType<SokobanPlayerMove>();
     }
 
     void OnTriggerEnter2D(Collider2D hit)
     {
+
         if (hit.CompareTag("Player"))
         {
             OnPickup();
 
-            playSound.Play();
+            if (playSound != null)
+            {
+                playSound.Play();
+            }
+
             Destroy(gameObject);
 
             // print("Item has been collected");

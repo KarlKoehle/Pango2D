@@ -20,7 +20,6 @@ public class Exit : MonoBehaviour
     {
         if (hit.CompareTag("Player"))
         {
-            // playSound.Play();
             print("Exit");
        
         SceneManager.LoadScene(nextLevel, LoadSceneMode.Single); 
