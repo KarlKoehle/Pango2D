@@ -8,8 +8,8 @@ public class PickupFish : PickupBase    //  PickupFishe is a derived class from 
 
     public override void OnPickup()
     {
-        Player.points += points;
-      //  playSound.Play(FishPickup);  
+        ScoreManager.scoreValue += points;
+ 
     }
 }
 

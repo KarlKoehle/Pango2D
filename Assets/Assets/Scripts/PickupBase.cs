@@ -4,17 +4,15 @@ using UnityEngine;
 
 public abstract class PickupBase : MonoBehaviour 
 {
-    public PlayerMove Player;
     public AudioSource playSound;
 
     private void Awake()
     {
-        Player = FindObjectOfType<PlayerMove>();
+       
     }
 
     void OnTriggerEnter2D(Collider2D hit)
     {
-
         if (hit.CompareTag("Player"))
         {
             OnPickup();

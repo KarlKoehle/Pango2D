@@ -26,12 +26,12 @@ public class EnemyVertPatrol : MonoBehaviour
 
         if (transform.position.y <= -5)
         {
-            moveSpeed = -moveSpeed;
+            moveSpeed = Mathf.Abs(moveSpeed);
         }
 
-        if (transform.position.y >= 5)
+        else if (transform.position.y >= 5)
         {
-            moveSpeed = -moveSpeed;
+            moveSpeed = -Mathf.Abs(moveSpeed);
         }
     }
 
@@ -39,8 +39,9 @@ public class EnemyVertPatrol : MonoBehaviour
     {
         if (hit.CompareTag("Player"))
         {
-            Player.points -= points;
-            Player.life -= life;
+            ScoreManager.scoreValue -= points;
+            ScoreManager.lifeValue -= life;
+                       
             playSound.Play();
         }
     }

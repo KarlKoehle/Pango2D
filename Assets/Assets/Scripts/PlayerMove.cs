@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float _speed = 3f;
-    public int points = 1;
-    public int life = 1;
+
 
     //Environment Collider
     public LayerMask mask;

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class LevelManager : MonoBehaviour
+public class ScoreManager : MonoBehaviour
 {
     public static int scoreValue = 0;
     public Text score;
@@ -21,8 +21,8 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
         //Post Points and Life to Screen
-        score.text = "Score:" + scoreValue + Player.points;
-        life.text = "Life:" + lifeValue + Player.life;   //***** WIP Work In Progress
+        score.text = "Score:" + scoreValue;
+        life.text = "Life:" + lifeValue;
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour
         }
 
         // Health  = GameOver
-        if (Player.points <= 0)
+        if (lifeValue <= 0)
         {
           SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
         }

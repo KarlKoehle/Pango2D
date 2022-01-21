@@ -313,6 +313,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01e11682eae54845b98f2745821e30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
   playSound: {fileID: 4643871904738803014}
-  points: 10
+  points: 1
