@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class PickupBase : MonoBehaviour
+public abstract class PickupBase : MonoBehaviour 
 {
     public GameObject Fish;
     public SokobanPlayerMove Player;
@@ -25,7 +25,7 @@ public abstract class PickupBase : MonoBehaviour
         }
     }
 
-    public abstract void OnPickup(); 
+    public abstract void OnPickup();
    
 }
 

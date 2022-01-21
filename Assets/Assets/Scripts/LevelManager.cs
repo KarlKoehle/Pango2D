@@ -8,8 +8,8 @@ public class LevelManager : MonoBehaviour
 {
     public static int scoreValue = 0;
     public Text score;
-    public static int life;
-    public Text lifeTotal;
+    public static int lifeValue = 1;
+    public Text life;
     public SokobanPlayerMove Player;
     public GameObject OpenDoor;
     public GameObject ExitBlocked;
@@ -24,7 +24,7 @@ public class LevelManager : MonoBehaviour
     {
         //Post Points and Life to Screen
         score.text = "Score:" + scoreValue + Player.points;
-        lifeTotal.text = "Life:" + life + Player.life;   //***** WIP Work In Progress
+        life.text = "Life:" + lifeValue + Player.life;   //***** WIP Work In Progress
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
