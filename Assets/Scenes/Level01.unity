@@ -1897,8 +1897,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 376, y: 172}
-  m_SizeDelta: {x: 124.36887, y: 59.03}
+  m_AnchoredPosition: {x: 356.91, y: 153.4}
+  m_SizeDelta: {x: 86.18447, y: 96.29385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730911773
 MonoBehaviour:
@@ -6381,9 +6381,9 @@ Transform:
   m_LocalPosition: {x: -9.17, y: -3.9875681, z: -20.16753}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2137182764}
   - {fileID: 1475310550}
   - {fileID: 1968567236}
-  - {fileID: 2137182764}
   - {fileID: 1379948560}
   - {fileID: 319148851}
   - {fileID: 1851881052}
@@ -6758,7 +6758,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1251113574}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1475310551
 AudioSource:
@@ -7256,8 +7256,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 376, y: 216}
-  m_SizeDelta: {x: 124.36887, y: 59.03}
+  m_AnchoredPosition: {x: 356.91, y: 218}
+  m_SizeDelta: {x: 86.18447, y: 55.107483}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1716101013
 MonoBehaviour:
@@ -7329,7 +7329,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: aae7c29b9d474ad4b83626c773e73baa, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -7612,7 +7612,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1251113574}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1968567237
 AudioSource:
@@ -8173,7 +8173,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1251113574}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2137182765
 AudioSource:

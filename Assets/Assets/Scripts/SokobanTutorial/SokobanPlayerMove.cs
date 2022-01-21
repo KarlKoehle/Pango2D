@@ -17,8 +17,8 @@ public class SokobanPlayerMove : MonoBehaviour
     Animator animator;
 
     //private string currentState;
-    public bool isPushing;  //add this later below per animation states  ******************
-    public bool isMoving = true;   // get this to work *****************
+    public bool isPushing;  //add this later below per animation states  ***************  WIP
+    public bool isMoving = true;   // get this to work *****************  WIP
 
     void Awake()
     {
@@ -123,8 +123,6 @@ public class SokobanPlayerMove : MonoBehaviour
 
 //const string P_idleDance = "P_idleDance";
 //const string P_frozen = "P_frozen";
-
-
 
 
 
